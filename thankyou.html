@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Я - студентка ВШЭ! (главная страница)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head> 
+
+<body>
+
+    <header>
+        <div style="width: 100vw; border: 0; display: flex; flex-wrap: nowrap;">
+            <div width=102 style="display:block; width:100px">&nbsp;</div>
+            <div valign=top style="display:block;">
+                <a href="https://hse.ru"><img alt="Вышка" src="img/vshe.png" style="width:100px"></a>
+            </div>
+            <div valign=bottom style="display:block;">
+                <nav>
+                    <a href="index.html">Обо мне</a> :: <a href="contact.html">Обратная связь</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div style="display: flex; flex-wrap: nowrap; width:100%; padding-right:100px; box-sizing: border-box;" id="a">
+
+            <div style="display:block; width:50px">&nbsp;</div>
+            
+            <div style="padding:20px; display:block;">  
+                <h1>Спасибо за обращение!</h1>
+                      
+    
+
+<p>Большое спасибо за заполнение формы, я обязательно вам отвечу!</p>
+
+ 
+
+                <aside style="background: #f0f0f0; padding: 10px; width: 200px; margin-top: 20px;">
+                    <h3>Полезные ссылки</h3>
+                    <ul>
+                        <li><a href="https://hse.ru">Сайт ВШЭ</a></li>
+                        <li><a href="https://www.hse.ru/ba/am/">Сайт Прикладной математики</a></li>
+						<li><a href="https://t.me/vneychebka">ТГК Внеучебки</a></li>
+                    </ul>
+
+                    <details>
+                        <summary style="cursor: pointer; color: blue;">Мой статус (нажми)</summary>
+                        <p>Студентка <data value="4">4 курса</data></p>
+                    </details>
+
+                    <dialog open style="position: static; display: block; margin-top: 10px; border: 1px dashed gray; font-size: 0.8em;">
+                        ⚠️ Сайт создан в учебных целях и не имеет никакого отношения в НИУ ВШЭ
+                    </dialog>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; Рада Лихачева, <time id="currentYear">2026</time> год
+        <p align=right><em><a href="contact.html">Написать мне</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</em></p>
+    </footer>
+
+	<script>
+        document.getElementById('currentYear').innerText = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

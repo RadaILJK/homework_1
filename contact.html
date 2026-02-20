@@ -2,30 +2,62 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Я - студентка ВШЭ! (форма связи)</title>
+    <title>Я - студентка ВШЭ! (главная страница)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="favicon.ico">
-    
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css" type="text/css">
     <style>
-        body { margin: 0; padding: 0; }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a:active {
+            color: rgb(255, 0, 157);
+        }
+
+		main {
+			margin-top: 120px;
+		}
+
+		.header_div {
+			width: 100vw; 
+			border: 0; 
+			display: flex; 
+			flex-wrap: nowrap; 
+			background: url('img/bg.gif');
+			position:fixed;
+			top: 1px;
+			left: 1px; 
+		} 
+
+		a {
+			font-family:serif; 
+			color:#fff598; 
+			font-size:25px; 
+			text-decoration:none; 
+			font-style:italic !important; 
+			font-weight:bold;
+		}
     </style>
 </head> 
 
 <body>
 
 <header>
-    <div style="width: 100vw; border: 0; display: flex; flex-wrap: nowrap;" >
-        <div width=102 style="display:block; width:100px">&nbsp;</div>
-        <div valign=top style="display:block;">
-            <a href="https://hse.ru"><img alt="Вышка" src="img/vshe.png" style="width:100px"></a>
-        </div>
-        <div valign=bottom style="display:block;">
-            <nav>
-                <a href="index.html">Обо мне</a> :: <a href="contact.html">Обратная связь</a>
-            </nav>
-        </div>
-    </div>
-</header>
+	<div class="header_div" >
+		<div width=102 style="display:block; width:100px">&nbsp;</div>
+		<div valign=top style="display:block;" ><a href="https://hse.ru"><IMG alt="Вышка"  src="img/vshe.png" style="width:100px"></a></div>
+		<div valign=bottom style="display:block;">
+			<nav>
+					<a href="index.html" id="active_link">Обо мне</a> 
+					:: 
+					<a href="contact.html">Обратная связь</a>
+			</nav> 
+		</div>
+	</div>
+</header> 
 
 <main>
     <div style="display: flex; flex-wrap: nowrap; width:100%; padding-right:100px; box-sizing: border-box;" id="a">

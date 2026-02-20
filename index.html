@@ -5,30 +5,60 @@
     <title>Я - студентка ВШЭ! (главная страница)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" href="style.css">
     <style>
         body {
             margin: 0;
             padding: 0;
         }
+
+        nav a:active {
+            color: rgb(255, 0, 157);
+        }
+
+		main {
+			margin-top: 120px;
+		}
+
+		.header_div {
+			width: 100vw; 
+			border: 0; 
+			display: flex; 
+			flex-wrap: nowrap; 
+			background: url('img/bg.gif');
+			position:fixed;
+			top: 1px;
+			left: 1px; 
+		} 
+
+		a {
+			font-family:serif; 
+			color:#fff598; 
+			font-size:25px; 
+			text-decoration:none; 
+			font-style:italic !important; 
+			font-weight:bold;
+		}
     </style>
 </head> 
 
 <body>
+	<header>
+		<div class="header_div" >
 
-    <header>
-        <div style="width: 100vw; border: 0; display: flex; flex-wrap: nowrap;">
-            <div width=102 style="display:block; width:100px">&nbsp;</div>
-            <div valign=top style="display:block;">
-                <a href="https://hse.ru"><img alt="Вышка" src="img/vshe.png" style="width:100px"></a>
-            </div>
-            <div valign=bottom style="display:block;">
-                <nav>
-                    <a href="index.html">Обо мне</a> :: <a href="contact.html">Обратная связь</a>
-                </nav>
-            </div>
-        </div>
-    </header>
+			<div width=102 style="display:block; width:100px">&nbsp;</div>
+			<div valign=top style="display:block;" ><a href="https://hse.ru"><IMG alt="Вышка"  src="img/vshe.png" style="width:100px"></a></div>
+			<div valign=bottom style="display:block;">
+				<nav>
+						<a href="index.html" id="active_link">Обо мне</a> 
+						:: 
+						<a href="contact.html">Обратная связь</a>
+				</nav> 
+			</div>
 
+		</div>
+
+	</header> 
     <main>
         <div style="display: flex; flex-wrap: nowrap; width:100%; padding-right:100px; box-sizing: border-box;" id="a">
 
@@ -38,12 +68,12 @@
                 <h1>Я - студентка ВШЭ!</h1>
                       
                 <article>
-					<figure style="float: right; width: 50vw; margin: 0 0 0px 100px;">
-						<img src="img/me.jpg" style="width: 100%;" alt="Мое фото">
-						<figcaption style="text-align: center; font-size: small; color: rgb(139, 121, 121);">Это я на учебе в Хогвартсе</figcaption>
+				
+					<figure>
+						<img src="img/me.jpg" alt="Мое фото" title="eto_ya">
 					</figure>
+				
                     <section>
-                        <!--<h2>Кто я и о чем этот сайт?</h2>        -->                
                         <p>
                             Привет, дорогие друзья! Меня зовут Рада и я уже четвертый год учусь в Высшей Школе Экономики (ВШЭ) на программе 
                             <span style="color: #003366; font-weight: bold;">"Прикладная математика"</span>.
@@ -79,9 +109,9 @@
 							К тому же иногда пар и так достаточно, так что стоит сразу корректно рассчитать свои силы. </p>
 
 						<p>Например, мое расписание в рандомную субботу на 4 курсе:</p>
-						<table border="1" cellpadding="5" style="border-collapse: collapse; width: 100%; margin-bottom: 20px;">
+						<table border="1" cellpadding="5" style="border-collapse: collapse; width: 70%; margin-bottom: 20px; background: #fff7cf;">
 							<thead>
-								<tr style="background: #eee;">
+								<tr>
 									<th>Время</th>
 									<th>Предмет</th>
 								</tr>
@@ -124,12 +154,12 @@
                     </section>
                 </article>
 
-                <aside style="background: #f0f0f0; padding: 10px; width: 200px; margin-top: 20px;">
+                <aside style="background-color: rgba(255, 255, 255, 0.3); padding: 10px; width: 500px; margin-top: 20px; border: #000000 1px solid; border-radius:10px">
                     <h3>Полезные ссылки</h3>
                     <ul>
-                        <li><a href="https://hse.ru">Сайт ВШЭ</a></li>
-                        <li><a href="https://www.hse.ru/ba/am/">Сайт Прикладной математики</a></li>
-						<li><a href="https://t.me/vneychebka">ТГК Внеучебки</a></li>
+                        <li><a href="https://hse.ru"  style="color: #1261b0">Сайт ВШЭ</a></li>
+                        <li class="tr"><a href="https://www.hse.ru/ba/am/" style="color: #003366">Сайт Прикладной математики</a></li>
+						<li class="mn"><a href="https://t.me/vneychebka" style="color: #002447">ТГК Внеучебки</a></li>
                     </ul>
 
                     <details>

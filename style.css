@@ -1,0 +1,100 @@
+body {
+    background: url("img/bg2.gif");
+    font-family: Verdana, sans-serif;
+}
+
+#active_link {
+    color: #671d00;
+    font-size: 25px;
+}
+
+#a {
+    border-right: 10px solid #f6b618;
+}
+
+a:hover {
+    color: #ffcccc;
+}
+
+img[title="eto_ya"] {
+    float: right;
+    border-radius: 10%;
+}
+
+@media (min-width: 800px) {
+    img[title="eto_ya"] {
+        width: 50%;
+    }
+
+    #a {
+        padding-right: 100px;
+    }
+}
+
+@media (max-width: 800px) {
+    img[title="eto_ya"] {
+        width: 100%;
+    }
+
+    #a {
+        padding-right: 0;
+    }
+}
+
+p::first-letter {
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    color: #ef4026;
+}
+
+.copyright {
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 10px;
+}
+
+.copyright::before {
+    content: "\00A9 ";
+    padding-right: 8px;
+}
+
+ul {
+    list-style-image: url("img/vorona.jpg");
+}
+
+li.tr {
+    list-style-image: url("img/pi.jpg");
+
+}
+
+li.mn {
+    list-style-image: url("img/tg.png");
+}
+
+li {
+    color: #777777;
+}
+
+h1,
+h2 {
+    color: #000033;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    position: relative;
+}
+
+footer p {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+
+h1 {
+    color: #000033 !important;
+}

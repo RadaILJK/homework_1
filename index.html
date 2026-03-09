@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Я - студентка ВШЭ! (главная страница)</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="favicon.ico">
-	<link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.ico" />
+	<link rel="stylesheet" href="style.css"  type="text/css" />
+	<link rel="stylesheet" href="leaflet.css"  type="text/css" />
+	
+<style>
+ 
+#map {width: 600px; height: 400px; }
+ 
+</style>
+
+<script src="leaflet.js"></script>
+
+
     <style>
         body {
             margin: 0;
@@ -153,6 +164,32 @@
                         </p>
                     </section>
                 </article>
+				
+				
+				<article>
+				<h2>Где Вышка?</h2>
+				<p>Моя Вышка - это здесь:</p>
+				
+<!-- карта -->
+
+<div id="map"></div>
+ 
+<script type='text/javascript'>
+ 
+//Определяем карту, координаты центра и начальный масштаб
+var map = L.map('map').setView([55.803474, 37.409846], 12);
+ 
+//Добавляем на нашу карту слой OpenStreetMap
+L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a rel="nofollow" href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+ 
+</script>
+
+<!-- / карта -->
+
+				</article>
+				
 
                 <aside style="background-color: rgba(255, 255, 255, 0.3); padding: 10px; width: 500px; margin-top: 20px; border: #000000 1px solid; border-radius:10px">
                     <h3>Полезные ссылки</h3>
